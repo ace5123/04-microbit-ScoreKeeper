@@ -1,5 +1,5 @@
 {
-    "name": "ScoreKeeper",
+    "name": "04 - ScoreKeeper",
     "description": "",
     "dependencies": {
         "core": "*",
