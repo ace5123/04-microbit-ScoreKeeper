@@ -1,0 +1,37 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="?D)+btAJw[QXOZvF?NJM">PlayerAWins</variable><variable id="*%BO?0vY/!7z9NQk?ciP">PlayerBWins</variable><variable id="^8~F=tULK|zbY5h6+31M">PlayersTie</variable></variables><block type="pxt-on-start" id="X~7:%rWi,ieW$dZf:)^W" x="-4" y="-260"><statement name="HANDLER"><block type="variables_set" id="tIJBB=~1Py}6`-Q)V]OM"><field name="VAR" id="^8~F=tULK|zbY5h6+31M">PlayersTie</field><value name="VALUE"><shadow type="math_number" id="L{_,pd;H~?rd3FS;W/$F"><field name="NUM">0</field></shadow></value><next><block type="variables_set" id="9I*2h?T=l8$R+81n(LuN"><field name="VAR" id="*%BO?0vY/!7z9NQk?ciP">PlayerBWins</field><value name="VALUE"><shadow type="math_number" id="YsHOTzOJ@qicgjx2IjZ_"><field name="NUM">0</field></shadow></value><next><block type="variables_set" id="brO:Z{xg2%_zf]H=-|U#"><field name="VAR" id="?D)+btAJw[QXOZvF?NJM">PlayerAWins</field><value name="VALUE"><shadow type="math_number" id="mcHOz^@T_g85Y]p{3|2U"><field name="NUM">0</field></shadow></value></block></next></block></next></block></statement></block><block type="device_button_event" id="2g$i8#*EdadPNiNX?qxd" x="0" y="0"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="variables_change" id="W/5Dl2?P5B0Aqs{m}BaP"><field name="VAR" id="?D)+btAJw[QXOZvF?NJM">PlayerAWins</field><value name="VALUE"><shadow type="math_number" id="qOYfoEEeb/yn]3l~}oV."><field name="NUM">1</field></shadow></value><next><block type="device_show_leds" id="%R7PWuXAU/JsxWSf=WZ("><field name="LEDS">`
+        . # # # . 
+        . # . # . 
+        . # # # . 
+        . # . # . 
+        . # . # .
+        `</field><next><block type="device_clear_display" id="8|x}xp3cou1XW$#.J1_?"></block></next></block></next></block></statement></block><block type="device_button_event" id=".osr2C7{6?8.Bpb9(5.D" x="357" y="-3"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="variables_change" id="aNb]LV$.M:t|JfFdR%Hc"><field name="VAR" id="*%BO?0vY/!7z9NQk?ciP">PlayerBWins</field><value name="VALUE"><shadow type="math_number" id="75c[MG?neiGoo:q{8*),"><field name="NUM">1</field></shadow></value><next><block type="device_show_leds" id="Dra3/_^z0L%URAl^dg(D"><field name="LEDS">`
+        . # # . . 
+        . # . # . 
+        . # # # . 
+        . # . # . 
+        . # # . .
+        `</field><next><block type="device_clear_display" id="4orZS51)U]MS5uJJ}4{V"></block></next></block></next></block></statement></block><block type="device_button_event" id="06IQ~bkEZNL@G;D3WYO4" x="695" y="-5"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="variables_change" id="nxR*?/hpp6N?wElyh5}3"><field name="VAR" id="^8~F=tULK|zbY5h6+31M">PlayersTie</field><value name="VALUE"><shadow type="math_number" id="lAyEz+jtdd}6)LW@}x@E"><field name="NUM">1</field></shadow></value><next><block type="device_show_leds" id="C)[hV?uJT)MnP{44PR/j"><field name="LEDS">`
+        . # # # . 
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . . # . .
+        `</field><next><block type="device_clear_display" id="R`.$KSSD772lvzG0zBAo"></block></next></block></next></block></statement></block><block type="device_gesture_event" id="-*hD-|Nliru/}Ye^b1?=" x="-3" y="451"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="device_print_message" id="~TS+RDe{l?ByTg{vjiPc"><value name="text"><shadow type="text" id="z|jYBI#gR@[{],P@=ckO"><field name="TEXT">Wins</field></shadow></value><next><block type="device_show_leds" id="(mRw0yyL}?i#9AO}Ys!P"><field name="LEDS">`
+        . # # # . 
+        . # . # . 
+        . # # # . 
+        . # . # . 
+        . # . # .
+        `</field><next><block type="device_show_number" id="}9I{2.(PPw^`K_+vm3P2"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="?36}eOU:BmW3R6yF^^cl"><field name="VAR" id="?D)+btAJw[QXOZvF?NJM">PlayerAWins</field></block></value><next><block type="device_pause" id="x23]A(dG|BS;E)9nFHo4"><value name="pause"><shadow type="timePicker" id="KY]!fjJ@T,5TJUhUQEXO"><field name="ms">1000</field></shadow></value><next><block type="device_show_leds" id="Qkd4XeDuL;V;Yk3ze,_#"><field name="LEDS">`
+        . # # . . 
+        . # . # . 
+        . # # # . 
+        . # . # . 
+        . # # . .
+        `</field><next><block type="device_show_number" id="(-CTNxk6sa6$*rZOXZ,7"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="]DnxyBC^VUqW#m{T{#8#"><field name="VAR" id="*%BO?0vY/!7z9NQk?ciP">PlayerBWins</field></block></value><next><block type="device_show_leds" id="B*3Sc]O#:uY}jLqsoEDS"><field name="LEDS">`
+        . # # # . 
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . . # . .
+        `</field><next><block type="device_show_number" id="5QVd@+5iYs|_iC%.?!6;"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="CJjJbY`baF(jaNTKZ8R*"><field name="VAR" id="^8~F=tULK|zbY5h6+31M">PlayersTie</field></block></value><next><block type="device_pause" id="0kdJ9c0uKYtD?!BbeA+2"><value name="pause"><shadow type="timePicker" id="+VMjgMgJ8OOUx]978g=g"><field name="ms">1000</field></shadow></value><next><block type="device_clear_display" id="=wxW]J9tpH3lz^s]c0mJ"></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
